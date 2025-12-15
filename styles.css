@@ -10,8 +10,10 @@ body {
     font-size: 14px;
     color: hsl(0, 0%, 100%);
     min-height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
 }
 
 .container {
@@ -61,10 +63,18 @@ body {
     border-radius: 10px;
     font-weight: 700;
     text-align: center;
+    color: #ffff;
+    text-decoration: none;
 }
 
 .link-tab:hover {
     background-color: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 8%);
     cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .avatar-image {
+        width: 80px;
+    }
 }
